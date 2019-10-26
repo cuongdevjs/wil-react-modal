@@ -3,6 +3,7 @@ declare module "wil-react-modal" {
     children: React.ReactNode;
     onOpenEnd: () => void;
     onCloseEnd: () => void;
+    fullScreen: boolean;
     placement: "center" | "top" | "right" | "bottom" | "left";
     scrollTarget: string;
     underlayColor: string;

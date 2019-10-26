@@ -49,6 +49,7 @@ class App extends React.Component {
 | animationType           | `"none" | "fade" | "fadeUp" | "fadeDown" | "fadeLeft" | "fadeRight" | "slideUp" | "slideDown" | "slideLeft" | "slideRight" | "zoom"`                            | `none`    | animation for modal |
 | underlayEnabled             | `boolean`                     | `true`       | On / off modal underlay |
 | underlayColor             | `string`                     | `rgba(0, 0, 0, 0.5)`       | Set color for modal underlay |
+| fullScreen             | `boolean`                     | `false`       | Content width 100% height 100% |
 | scrollTarget             | `string`                     | `window`       | Toggle the scroll bar of the element. Example scrollTarget value: window, #root, ...  |
 | scrollTargetEnabled             | `boolean`                     | `false`       | Allow toggle scroll bar  |
 | onOpenEnd             | `() => void`                     | -       | Callback executed when modal open  |

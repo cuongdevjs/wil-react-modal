@@ -2311,7 +2311,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css = "/* add css styles here (optional) */\n\n.styles_modalContentWrapper__29wUF {\n  position: fixed;\n  overflow: hidden;\n  z-index: 10000;\n}\n\n.styles_fullScreen__ZQEF8 {\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n}\n\n.styles_modalContent__2s9Lt {\n  width: 100%;\n  height: 100%;\n  overflow: hidden auto;\n}\n\n.styles_modalContentInner__19dn4 {\n  position: relative;\n  z-index: 10;\n  will-change: opacity, transform;\n  transition: all 0.3s ease;\n}\n\n.styles_underlay__1rSen {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 9;\n  opacity: 0;\n  transition: opacity 0.3s ease;\n}\n\n.styles_center__2Zkpe .styles_modalContent__2s9Lt {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-wrap: wrap;\n}\n\n.styles_left__1QLwJ {\n  top: 0;\n  bottom: 0;\n  left: 0;\n}\n\n.styles_left__1QLwJ .styles_modalContent__2s9Lt {\n  display: flex;\n}\n\n.styles_left__1QLwJ .styles_modalContentInner__19dn4 {\n  height: 100%;\n}\n\n.styles_right__1THUQ {\n  top: 0;\n  bottom: 0;\n  right: 0;\n}\n\n.styles_right__1THUQ .styles_modalContent__2s9Lt {\n  display: flex;\n  justify-content: flex-end;\n  height: 100%;\n}\n\n.styles_right__1THUQ .styles_modalContentInner__19dn4 {\n  height: 100%;\n}\n\n.styles_top__1as09 {\n  top: 0;\n  left: 0;\n  right: 0;\n}\n\n.styles_top__1as09 .styles_modalContent__2s9Lt {\n  width: 100%;\n}\n\n.styles_bottom__1CYW9 {\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\n\n.styles_bottom__1CYW9 .styles_modalContent__2s9Lt {\n  display: flex;\n  align-items: flex-end;\n}\n\n.styles_bottom__1CYW9 .styles_modalContentInner__19dn4 {\n  width: 100%;\n}\n\n.styles_fade__39lAn .styles_modalContentInner__19dn4 {\n  opacity: 0;\n}\n\n.styles_zoom__1MrWD .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: scale(0.6);\n}\n\n.styles_fadeLeft__21nsl .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(-20vw, 0);\n}\n\n.styles_fadeRight__1yExP .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(20vw, 0);\n}\n\n.styles_fadeUp__3HvN2 .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(0, -20vh);\n}\n\n.styles_fadeDown__12VgQ .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(0, 20vh);\n}\n\n.styles_slideLeft__22inw .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(-20%, 0);\n}\n\n.styles_slideRight__1BvTu .styles_modalContentInner__19dn4 {\n  transform: translate(100%, 0);\n}\n\n.styles_slideUp__1qSUR .styles_modalContentInner__19dn4 {\n  transform: translate(0, -100%);\n}\n\n.styles_slideDown__-veIR .styles_modalContentInner__19dn4 {\n  transform: translate(0, 100%);\n}\n";
+var css = "/* add css styles here (optional) */\n\n.styles_modalContentWrapper__29wUF {\n  position: fixed;\n  overflow: hidden;\n  z-index: 10000;\n}\n\n.styles_fullScreen__ZQEF8 {\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n}\n\n.styles_modalContent__2s9Lt {\n  width: 100%;\n  height: 100%;\n}\n\n.styles_modalContentInner__19dn4 {\n  position: relative;\n  z-index: 10;\n  will-change: opacity, transform;\n  transition: all 0.3s ease;\n}\n\n.styles_underlay__1rSen {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 9;\n  opacity: 0;\n  transition: opacity 0.3s ease;\n}\n\n.styles_center__2Zkpe .styles_modalContent__2s9Lt {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-wrap: wrap;\n}\n\n.styles_left__1QLwJ {\n  top: 0;\n  bottom: 0;\n  left: 0;\n}\n\n.styles_left__1QLwJ .styles_modalContent__2s9Lt {\n  display: flex;\n}\n\n.styles_left__1QLwJ .styles_modalContentInner__19dn4 {\n  height: 100%;\n}\n\n.styles_right__1THUQ {\n  top: 0;\n  bottom: 0;\n  right: 0;\n}\n\n.styles_right__1THUQ .styles_modalContent__2s9Lt {\n  display: flex;\n  justify-content: flex-end;\n  height: 100%;\n}\n\n.styles_right__1THUQ .styles_modalContentInner__19dn4 {\n  height: 100%;\n}\n\n.styles_top__1as09 {\n  top: 0;\n  left: 0;\n  right: 0;\n}\n\n.styles_top__1as09 .styles_modalContent__2s9Lt {\n  width: 100%;\n}\n\n.styles_bottom__1CYW9 {\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\n\n.styles_bottom__1CYW9 .styles_modalContent__2s9Lt {\n  display: flex;\n  align-items: flex-end;\n}\n\n.styles_bottom__1CYW9 .styles_modalContentInner__19dn4 {\n  width: 100%;\n}\n\n.styles_fade__39lAn .styles_modalContentInner__19dn4 {\n  opacity: 0;\n}\n\n.styles_zoom__1MrWD .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: scale(0.6);\n}\n\n.styles_fadeLeft__21nsl .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(-20vw, 0);\n}\n\n.styles_fadeRight__1yExP .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(20vw, 0);\n}\n\n.styles_fadeUp__3HvN2 .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(0, -20vh);\n}\n\n.styles_fadeDown__12VgQ .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(0, 20vh);\n}\n\n.styles_slideLeft__22inw .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(-20%, 0);\n}\n\n.styles_slideRight__1BvTu .styles_modalContentInner__19dn4 {\n  transform: translate(100%, 0);\n}\n\n.styles_slideUp__1qSUR .styles_modalContentInner__19dn4 {\n  transform: translate(0, -100%);\n}\n\n.styles_slideDown__-veIR .styles_modalContentInner__19dn4 {\n  transform: translate(0, 100%);\n}\n";
 var styles = {"modalContentWrapper":"styles_modalContentWrapper__29wUF","fullScreen":"styles_fullScreen__ZQEF8","modalContent":"styles_modalContent__2s9Lt","modalContentInner":"styles_modalContentInner__19dn4","underlay":"styles_underlay__1rSen","center":"styles_center__2Zkpe","left":"styles_left__1QLwJ","right":"styles_right__1THUQ","top":"styles_top__1as09","bottom":"styles_bottom__1CYW9","fade":"styles_fade__39lAn","zoom":"styles_zoom__1MrWD","fadeLeft":"styles_fadeLeft__21nsl","fadeRight":"styles_fadeRight__1yExP","fadeUp":"styles_fadeUp__3HvN2","fadeDown":"styles_fadeDown__12VgQ","slideLeft":"styles_slideLeft__22inw","slideRight":"styles_slideRight__1BvTu","slideUp":"styles_slideUp__1qSUR","slideDown":"styles_slideDown__-veIR"};
 styleInject(css);
 
@@ -2558,7 +2558,7 @@ function (_PureComponent) {
               return _this._setModalAnimated(true);
 
             case 9:
-              if (_this._getLengthModals() === 1 && !scrollTargetEnabled) {
+              if (_this._getLengthModals() >= 1 && !scrollTargetEnabled) {
                 _this._setScrollBarOverflow("hidden", _this._getScrollBarWidth());
               }
 
@@ -2652,15 +2652,24 @@ function (_PureComponent) {
           children = _this$props4.children,
           underlayEnabled = _this$props4.underlayEnabled,
           placement = _this$props4.placement,
-          animationType = _this$props4.animationType;
+          animationType = _this$props4.animationType,
+          fullScreen = _this$props4.fullScreen;
+      var isAnimated = _this.state.isAnimated;
       var isCenter = placement === "center";
       var fullScreenClassName = underlayEnabled || isCenter ? styles.fullScreen : "";
       return React.createElement("div", {
         className: "".concat(styles.modalContentWrapper, " ").concat(styles[placement], " ").concat(styles[animationType], " ").concat(fullScreenClassName)
       }, React.createElement("div", {
-        className: styles.modalContent
+        className: styles.modalContent,
+        style: isAnimated ? {
+          overflow: "hidden auto"
+        } : {}
       }, _this._renderUnderlay(), React.createElement("div", {
         className: styles.modalContentInner,
+        style: fullScreen ? {
+          width: "100%",
+          height: "100%"
+        } : {},
         ref: _this._setModalContentRef
       }, children)));
     });
@@ -2759,6 +2768,7 @@ function (_PureComponent) {
 _defineProperty(Modal, "defaultProps", {
   onOpenEnd: function onOpenEnd() {},
   onCloseEnd: function onCloseEnd() {},
+  fullScreen: false,
   displayName: "",
   placement: "center",
   animationType: "none",
