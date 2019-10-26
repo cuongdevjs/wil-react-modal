@@ -2,7 +2,6 @@ declare module "wil-react-modal" {
   export interface Props {
     children: React.ReactNode;
     onOpenEnd: () => void;
-    onOpenEndAsync: (onReRender: Function) => Promise<any>;
     onCloseEnd: () => void;
     placement: "center" | "top" | "right" | "bottom" | "left";
     scrollTarget: string;
@@ -26,6 +25,7 @@ declare module "wil-react-modal" {
   }
 
   export interface State {
+    isAnimated: boolean;
     isVisible: boolean;
     modalId: number;
   }

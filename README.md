@@ -52,7 +52,6 @@ class App extends React.Component {
 | scrollTarget             | `string`                     | `window`       | Toggle the scroll bar of the element. Example scrollTarget value: window, #root, ...  |
 | scrollTargetEnabled             | `boolean`                     | `false`       | Allow toggle scroll bar  |
 | onOpenEnd             | `() => void`                     | -       | Callback executed when modal open  |
-| onOpenEndAsync             | `(onReRender: Function) => Promise<any>`  | -       | Callback executed when modal open. Do something ... then call onReRender() again for the purpose of changing modal content. example fetch api  |
 | onCloseEnd             | `() => void`                     | -       | Callback executed when modal close  |
 | isVisible             | `boolean`                     | -       | Set on / off modal. This attribute is needed when you want to open modal at the beginning without taking action  |
 
