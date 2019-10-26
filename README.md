@@ -57,6 +57,7 @@ class App extends React.Component {
 | isVisible             | `boolean`                     | -       | Set on / off modal. This attribute is needed when you want to open modal at the beginning without taking action  |
 
 **Methods**
+
 | Method                |  Description |
 | :---------            | :----------- |
 | open                  | Open modal with prop displayName Modal.open("displayName") |
