@@ -29,6 +29,7 @@ declare module "wil-react-modal" {
     isAnimated: boolean;
     isVisible: boolean;
     modalId: number;
+    scrollBarContentWidth: number;
   }
 
   export default class Modal<State extends object> {
