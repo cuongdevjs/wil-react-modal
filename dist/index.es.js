@@ -2531,7 +2531,6 @@ function (_PureComponent) {
       }
 
       if (scrollTarget instanceof Node) {
-        console.log(scrollTarget.offsetWidth - scrollTarget.clientWidth);
         return scrollTarget.offsetWidth - scrollTarget.clientWidth;
       }
 
