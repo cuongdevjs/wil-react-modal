@@ -57,6 +57,7 @@ class App extends React.Component {
 | :---------            | :-------:                           | :-----: | :----------- |
 | displayName             | `string`                     | -       | Modal name |
 | placement             | `"center", "top", "right", "bottom", "left"`                     | `center`       | The position of the modal relative to the screen |
+| animationDuration    | `number`      | `300`       | Modal animation duration ( milliseconds ) |
 | animationType           | `"none", "fade", "fadeUp", "fadeDown", "fadeLeft", "fadeRight", "slideUp", "slideDown", "slideLeft", "slideRight", "zoom"`                            | `none`    | animation for modal |
 | underlayEnabled             | `boolean`                     | `true`       | On / off modal underlay |
 | underlayColor             | `string`                     | `rgba(0, 0, 0, 0.5)`       | Set color for modal underlay |
