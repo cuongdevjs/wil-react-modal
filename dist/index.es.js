@@ -1023,7 +1023,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css = ".styles_modalContentWrapper__29wUF {\n  position: fixed;\n  overflow: hidden;\n  z-index: 10000;\n}\n\n.styles_fullScreen__ZQEF8 {\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n}\n\n.styles_modalContent__2s9Lt {\n  width: 100%;\n  height: 100%;\n}\n\n.styles_modalContentInner__19dn4 {\n  position: relative;\n  z-index: 10;\n  will-change: opacity, transform;\n  transition: all 0.3s ease;\n}\n\n.styles_underlay__1rSen {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 9;\n  opacity: 0;\n  transition: opacity 0.3s ease;\n}\n\n.styles_center__2Zkpe .styles_modalContent__2s9Lt {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-wrap: wrap;\n}\n\n.styles_left__1QLwJ {\n  top: 0;\n  bottom: 0;\n  left: 0;\n}\n\n.styles_left__1QLwJ .styles_modalContent__2s9Lt {\n  display: flex;\n}\n\n.styles_left__1QLwJ .styles_modalContentInner__19dn4 {\n  height: 100%;\n}\n\n.styles_right__1THUQ {\n  top: 0;\n  bottom: 0;\n  right: 0;\n}\n\n.styles_right__1THUQ .styles_modalContent__2s9Lt {\n  display: flex;\n  justify-content: flex-end;\n  height: 100%;\n}\n\n.styles_right__1THUQ .styles_modalContentInner__19dn4 {\n  height: 100%;\n}\n\n.styles_top__1as09 {\n  top: 0;\n  left: 0;\n  right: 0;\n}\n\n.styles_top__1as09 .styles_modalContent__2s9Lt {\n  width: 100%;\n}\n\n.styles_bottom__1CYW9 {\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\n\n.styles_bottom__1CYW9 .styles_modalContent__2s9Lt {\n  display: flex;\n  align-items: flex-end;\n}\n\n.styles_bottom__1CYW9 .styles_modalContentInner__19dn4 {\n  width: 100%;\n}\n\n.styles_fade__39lAn .styles_modalContentInner__19dn4 {\n  opacity: 0;\n}\n\n.styles_zoom__1MrWD .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: scale(0.6);\n}\n\n.styles_fadeLeft__21nsl .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(-20vw, 0);\n}\n\n.styles_fadeRight__1yExP .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(20vw, 0);\n}\n\n.styles_fadeUp__3HvN2 .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(0, -20vh);\n}\n\n.styles_fadeDown__12VgQ .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(0, 20vh);\n}\n\n.styles_slideLeft__22inw .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(-20%, 0);\n}\n\n.styles_slideRight__1BvTu .styles_modalContentInner__19dn4 {\n  transform: translate(100%, 0);\n}\n\n.styles_slideUp__1qSUR .styles_modalContentInner__19dn4 {\n  transform: translate(0, -100%);\n}\n\n.styles_slideDown__-veIR .styles_modalContentInner__19dn4 {\n  transform: translate(0, 100%);\n}\n\n.styles_animated__eXIXQ.styles_fade__39lAn .styles_modalContentInner__19dn4 {\n  opacity: 1;\n}\n.styles_animated__eXIXQ.styles_zoom__1MrWD .styles_modalContentInner__19dn4 {\n  transform: scale(1);\n  opacity: 1;\n}\n\n.styles_animated__eXIXQ.styles_fadeLeft__21nsl .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_fadeRight__1yExP .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_fadeUp__3HvN2 .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_fadeDown__12VgQ .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideLeft__22inw .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideRight__1BvTu .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideUp__1qSUR .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideDown__-veIR .styles_modalContentInner__19dn4 {\n  opacity: 1;\n  transform: translate(0, 0);\n}\n\n.styles_animated__eXIXQ .styles_underlay__1rSen {\n  opacity: 1;\n}\n";
+var css = ".styles_modalContentWrapper__29wUF {\n  position: fixed;\n  overflow: hidden;\n  z-index: 10000;\n}\n\n.styles_fullScreen__ZQEF8 {\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n}\n\n.styles_modalContent__2s9Lt {\n  width: 100%;\n  height: 100%;\n}\n\n.styles_modalContentInner__19dn4 {\n  position: relative;\n  z-index: 10;\n  will-change: opacity, transform;\n}\n\n.styles_underlay__1rSen {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 9;\n  opacity: 0;\n}\n\n.styles_center__2Zkpe .styles_modalContent__2s9Lt {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-wrap: wrap;\n}\n\n.styles_left__1QLwJ {\n  top: 0;\n  bottom: 0;\n  left: 0;\n}\n\n.styles_left__1QLwJ .styles_modalContent__2s9Lt {\n  display: flex;\n}\n\n.styles_left__1QLwJ .styles_modalContentInner__19dn4 {\n  height: 100%;\n}\n\n.styles_right__1THUQ {\n  top: 0;\n  bottom: 0;\n  right: 0;\n}\n\n.styles_right__1THUQ .styles_modalContent__2s9Lt {\n  display: flex;\n  justify-content: flex-end;\n  height: 100%;\n}\n\n.styles_right__1THUQ .styles_modalContentInner__19dn4 {\n  height: 100%;\n}\n\n.styles_top__1as09 {\n  top: 0;\n  left: 0;\n  right: 0;\n}\n\n.styles_top__1as09 .styles_modalContent__2s9Lt {\n  width: 100%;\n}\n\n.styles_bottom__1CYW9 {\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\n\n.styles_bottom__1CYW9 .styles_modalContent__2s9Lt {\n  display: flex;\n  align-items: flex-end;\n}\n\n.styles_bottom__1CYW9 .styles_modalContentInner__19dn4 {\n  width: 100%;\n}\n\n.styles_fade__39lAn .styles_modalContentInner__19dn4 {\n  opacity: 0;\n}\n\n.styles_zoom__1MrWD .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: scale(0.6);\n}\n\n.styles_fadeLeft__21nsl .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(-20vw, 0);\n}\n\n.styles_fadeRight__1yExP .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(20vw, 0);\n}\n\n.styles_fadeUp__3HvN2 .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(0, -20vh);\n}\n\n.styles_fadeDown__12VgQ .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(0, 20vh);\n}\n\n.styles_slideLeft__22inw .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(-20%, 0);\n}\n\n.styles_slideRight__1BvTu .styles_modalContentInner__19dn4 {\n  transform: translate(100%, 0);\n}\n\n.styles_slideUp__1qSUR .styles_modalContentInner__19dn4 {\n  transform: translate(0, -100%);\n}\n\n.styles_slideDown__-veIR .styles_modalContentInner__19dn4 {\n  transform: translate(0, 100%);\n}\n\n.styles_animated__eXIXQ.styles_fade__39lAn .styles_modalContentInner__19dn4 {\n  opacity: 1;\n}\n.styles_animated__eXIXQ.styles_zoom__1MrWD .styles_modalContentInner__19dn4 {\n  transform: scale(1);\n  opacity: 1;\n}\n\n.styles_animated__eXIXQ.styles_fadeLeft__21nsl .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_fadeRight__1yExP .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_fadeUp__3HvN2 .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_fadeDown__12VgQ .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideLeft__22inw .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideRight__1BvTu .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideUp__1qSUR .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideDown__-veIR .styles_modalContentInner__19dn4 {\n  opacity: 1;\n  transform: translate(0, 0);\n}\n\n.styles_animated__eXIXQ .styles_underlay__1rSen {\n  opacity: 1;\n}\n";
 var styles = {"modalContentWrapper":"styles_modalContentWrapper__29wUF","fullScreen":"styles_fullScreen__ZQEF8","modalContent":"styles_modalContent__2s9Lt","modalContentInner":"styles_modalContentInner__19dn4","underlay":"styles_underlay__1rSen","center":"styles_center__2Zkpe","left":"styles_left__1QLwJ","right":"styles_right__1THUQ","top":"styles_top__1as09","bottom":"styles_bottom__1CYW9","fade":"styles_fade__39lAn","zoom":"styles_zoom__1MrWD","fadeLeft":"styles_fadeLeft__21nsl","fadeRight":"styles_fadeRight__1yExP","fadeUp":"styles_fadeUp__3HvN2","fadeDown":"styles_fadeDown__12VgQ","slideLeft":"styles_slideLeft__22inw","slideRight":"styles_slideRight__1BvTu","slideUp":"styles_slideUp__1qSUR","slideDown":"styles_slideDown__-veIR","animated":"styles_animated__eXIXQ"};
 styleInject(css);
 
@@ -1264,13 +1264,13 @@ function (_PureComponent) {
       var _ref7 = _asyncToGenerator(
       /*#__PURE__*/
       regenerator.mark(function _callee6(payload) {
-        var _this$props, scrollTargetEnabled, onOpen, onOpenEnd, animationType, scrollTarget;
+        var _this$props, scrollTargetEnabled, onOpen, onOpenEnd, animationType, scrollTarget, animationDuration;
 
         return regenerator.wrap(function _callee6$(_context6) {
           while (1) {
             switch (_context6.prev = _context6.next) {
               case 0:
-                _this$props = _this.props, scrollTargetEnabled = _this$props.scrollTargetEnabled, onOpen = _this$props.onOpen, onOpenEnd = _this$props.onOpenEnd, animationType = _this$props.animationType, scrollTarget = _this$props.scrollTarget;
+                _this$props = _this.props, scrollTargetEnabled = _this$props.scrollTargetEnabled, onOpen = _this$props.onOpen, onOpenEnd = _this$props.onOpenEnd, animationType = _this$props.animationType, scrollTarget = _this$props.scrollTarget, animationDuration = _this$props.animationDuration;
                 _context6.next = 3;
                 return _this._setModalId();
 
@@ -1297,7 +1297,7 @@ function (_PureComponent) {
                 });
 
                 _context6.next = 14;
-                return sleep(animationType === "none" ? 0 : 300);
+                return sleep(animationType === "none" ? 0 : animationDuration);
 
               case 14:
                 onOpenEnd(payload);
@@ -1320,19 +1320,19 @@ function (_PureComponent) {
     _asyncToGenerator(
     /*#__PURE__*/
     regenerator.mark(function _callee7() {
-      var _this$props2, scrollTargetEnabled, animationType, onCloseEnd;
+      var _this$props2, scrollTargetEnabled, animationType, onCloseEnd, animationDuration;
 
       return regenerator.wrap(function _callee7$(_context7) {
         while (1) {
           switch (_context7.prev = _context7.next) {
             case 0:
-              _this$props2 = _this.props, scrollTargetEnabled = _this$props2.scrollTargetEnabled, animationType = _this$props2.animationType, onCloseEnd = _this$props2.onCloseEnd;
+              _this$props2 = _this.props, scrollTargetEnabled = _this$props2.scrollTargetEnabled, animationType = _this$props2.animationType, onCloseEnd = _this$props2.onCloseEnd, animationDuration = _this$props2.animationDuration;
               _context7.next = 3;
               return _this._setModalAnimated(false);
 
             case 3:
               _context7.next = 5;
-              return sleep(animationType === "none" ? 0 : 300);
+              return sleep(animationType === "none" ? 0 : animationDuration);
 
             case 5:
               if (_this._getLengthModals() === 1 && !scrollTargetEnabled) {
@@ -1373,7 +1373,8 @@ function (_PureComponent) {
       var _this$props3 = _this.props,
           underlayColor = _this$props3.underlayColor,
           underlayEnabled = _this$props3.underlayEnabled,
-          animationType = _this$props3.animationType;
+          animationType = _this$props3.animationType,
+          animationDuration = _this$props3.animationDuration;
       var scrollBarContentWidth = _this.state.scrollBarContentWidth;
 
       if (!underlayEnabled) {
@@ -1387,7 +1388,9 @@ function (_PureComponent) {
           right: !!scrollBarContentWidth ? scrollBarContentWidth : 0
         }, animationType === "none" ? {
           transition: "none"
-        } : {}),
+        } : {
+          transition: "opacity ".concat(animationDuration, "ms ease")
+        }),
         role: "presentation",
         onClick: _this._handleCloseModal
       });
@@ -1399,7 +1402,8 @@ function (_PureComponent) {
           underlayEnabled = _this$props4.underlayEnabled,
           placement = _this$props4.placement,
           animationType = _this$props4.animationType,
-          fullScreen = _this$props4.fullScreen;
+          fullScreen = _this$props4.fullScreen,
+          animationDuration = _this$props4.animationDuration;
       var isAnimated = _this.state.isAnimated;
       var isCenter = placement === "center";
       var fullScreenClassName = underlayEnabled || isCenter ? styles.fullScreen : "";
@@ -1419,7 +1423,9 @@ function (_PureComponent) {
           height: "100%"
         } : {}, {}, animationType === "none" ? {
           transition: "none"
-        } : {})
+        } : {
+          transition: "all ".concat(animationDuration, "ms ease")
+        })
       }, children)));
     });
 
@@ -1516,7 +1522,8 @@ _defineProperty(Modal, "defaultProps", {
   underlayColor: "rgba(0, 0, 0, 0.5)",
   underlayEnabled: true,
   isVisible: false,
-  scrollTargetEnabled: false
+  scrollTargetEnabled: false,
+  animationDuration: 300
 });
 
 _defineProperty(Modal, "open", function (displayName, payload) {

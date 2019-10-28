@@ -12,6 +12,7 @@ declare module "wil-react-modal" {
     isVisible: boolean;
     scrollTargetEnabled: boolean;
     displayName: string;
+    animationDuration: number;
     animationType:
       | "none"
       | "fade"
