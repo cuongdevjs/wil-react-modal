@@ -4,7 +4,7 @@
 node_modules
 
 # builds
-src
+/src
 
 # misc
 .DS_Store

@@ -996,6 +996,23 @@ function () {
   return Emitter;
 }();
 
+var _navigator = navigator,
+    userAgent = _navigator.userAgent;
+var android = !!userAgent.match(/Android/i);
+var blackBerry = !!userAgent.match(/BlackBerry/i);
+var ios = !!userAgent.match(/iPhone|iPad|iPod/i);
+var opera = !!userAgent.match(/Opera Mini/i);
+var windows = !!userAgent.match(/IEMobile/i) || !!userAgent.match(/WPDesktop/i);
+var any = android || blackBerry || ios || opera || windows;
+var isMobile = {
+  android: android,
+  blackBerry: blackBerry,
+  ios: ios,
+  opera: opera,
+  windows: windows,
+  any: any
+};
+
 function styleInject(css, ref) {
   if ( ref === void 0 ) ref = {};
   var insertAt = ref.insertAt;
@@ -1051,7 +1068,8 @@ function (_PureComponent) {
       isAnimated: false,
       isVisible: false,
       modalId: 0,
-      scrollBarContentWidth: 0
+      scrollBarContentWidth: 0,
+      scrollY: 0
     });
 
     _defineProperty(_assertThisInitialized(_this), "_open", void 0);
@@ -1251,67 +1269,109 @@ function (_PureComponent) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "_getLengthModals", function () {
-      var $modals = _toConsumableArray(document.querySelectorAll("[id^='__wil_modal_']"));
+      var $modals = _toConsumableArray(document.querySelectorAll(".__wil_modal__"));
 
       return $modals.filter(function ($modal) {
         return !!$modal && $modal.getAttribute("data-static") !== "true";
       }).length;
     });
 
+    _defineProperty(_assertThisInitialized(_this), "_getScrollY", function () {
+      var scrollTarget = _this.props.scrollTarget;
+
+      if (scrollTarget === "window") {
+        return window.scrollY;
+      }
+
+      var $element = document.querySelector(scrollTarget);
+      return $element ? $element.scrollTop : 0;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "_setScrollY",
+    /*#__PURE__*/
+    _asyncToGenerator(
+    /*#__PURE__*/
+    regenerator.mark(function _callee6() {
+      return regenerator.wrap(function _callee6$(_context6) {
+        while (1) {
+          switch (_context6.prev = _context6.next) {
+            case 0:
+              _context6.next = 2;
+              return _this.setState({
+                scrollY: _this._getScrollY()
+              });
+
+            case 2:
+            case "end":
+              return _context6.stop();
+          }
+        }
+      }, _callee6);
+    })));
+
     _defineProperty(_assertThisInitialized(_this), "_handleOpenModal",
     /*#__PURE__*/
     function () {
-      var _ref7 = _asyncToGenerator(
+      var _ref8 = _asyncToGenerator(
       /*#__PURE__*/
-      regenerator.mark(function _callee6(payload) {
+      regenerator.mark(function _callee7(payload) {
         var _this$props, scrollTargetEnabled, onOpen, onOpenEnd, animationType, scrollTarget, animationDuration;
 
-        return regenerator.wrap(function _callee6$(_context6) {
+        return regenerator.wrap(function _callee7$(_context7) {
           while (1) {
-            switch (_context6.prev = _context6.next) {
+            switch (_context7.prev = _context7.next) {
               case 0:
                 _this$props = _this.props, scrollTargetEnabled = _this$props.scrollTargetEnabled, onOpen = _this$props.onOpen, onOpenEnd = _this$props.onOpenEnd, animationType = _this$props.animationType, scrollTarget = _this$props.scrollTarget, animationDuration = _this$props.animationDuration;
-                _context6.next = 3;
-                return _this._setModalId();
+                _context7.next = 3;
+                return _this._setScrollY();
 
               case 3:
+                _context7.next = 5;
+                return _this._setModalId();
+
+              case 5:
                 if (_this._getLengthModals() === 1 && !scrollTargetEnabled) {
                   _this._setScrollBarOverflow("hidden", _this._getScrollBarWidth(scrollTarget));
                 }
 
-                _context6.next = 6;
+                _context7.next = 8;
                 return _this._setModalVisible(true);
 
-              case 6:
+              case 8:
                 onOpen(payload);
-                _context6.next = 9;
+                _context7.next = 11;
                 return sleep(animationType === "none" ? 0 : 50);
 
-              case 9:
-                _context6.next = 11;
+              case 11:
+                _context7.next = 13;
                 return _this._setModalAnimated(true);
 
-              case 11:
+              case 13:
                 _this.setState({
                   scrollBarContentWidth: _this._getScrollBarWidth(_this._modalContent)
                 });
 
-                _context6.next = 14;
+                _context7.next = 16;
                 return sleep(animationType === "none" ? 0 : animationDuration);
 
-              case 14:
+              case 16:
+                if (isMobile.ios) {
+                  window.addEventListener("touchmove", _this._fixDisableScrollMobile);
+                  window.addEventListener("scroll", _this._fixDisableScrollMobile);
+                }
+
                 onOpenEnd(payload);
 
-              case 15:
+              case 18:
               case "end":
-                return _context6.stop();
+                return _context7.stop();
             }
           }
-        }, _callee6);
+        }, _callee7);
       }));
 
       return function (_x5) {
-        return _ref7.apply(this, arguments);
+        return _ref8.apply(this, arguments);
       };
     }());
 
@@ -1319,19 +1379,19 @@ function (_PureComponent) {
     /*#__PURE__*/
     _asyncToGenerator(
     /*#__PURE__*/
-    regenerator.mark(function _callee7() {
+    regenerator.mark(function _callee8() {
       var _this$props2, scrollTargetEnabled, animationType, onCloseEnd, animationDuration;
 
-      return regenerator.wrap(function _callee7$(_context7) {
+      return regenerator.wrap(function _callee8$(_context8) {
         while (1) {
-          switch (_context7.prev = _context7.next) {
+          switch (_context8.prev = _context8.next) {
             case 0:
               _this$props2 = _this.props, scrollTargetEnabled = _this$props2.scrollTargetEnabled, animationType = _this$props2.animationType, onCloseEnd = _this$props2.onCloseEnd, animationDuration = _this$props2.animationDuration;
-              _context7.next = 3;
+              _context8.next = 3;
               return _this._setModalAnimated(false);
 
             case 3:
-              _context7.next = 5;
+              _context8.next = 5;
               return sleep(animationType === "none" ? 0 : animationDuration);
 
             case 5:
@@ -1339,25 +1399,48 @@ function (_PureComponent) {
                 _this._setScrollBarOverflow("", 0);
               }
 
-              _context7.next = 8;
+              _context8.next = 8;
               return _this._setModalVisible(false);
 
             case 8:
+              if (isMobile.ios) {
+                window.removeEventListener("touchmove", _this._fixDisableScrollMobile);
+                window.removeEventListener("scroll", _this._fixDisableScrollMobile);
+              }
+
               onCloseEnd();
 
-            case 9:
+            case 10:
             case "end":
-              return _context7.stop();
+              return _context8.stop();
           }
         }
-      }, _callee7);
+      }, _callee8);
     })));
+
+    _defineProperty(_assertThisInitialized(_this), "_fixDisableScrollMobile", function () {
+      var _this$props3 = _this.props,
+          scrollTarget = _this$props3.scrollTarget,
+          scrollTargetEnabled = _this$props3.scrollTargetEnabled;
+      var _this$state = _this.state,
+          scrollY = _this$state.scrollY,
+          isVisible = _this$state.isVisible;
+
+      if (isVisible && !scrollTargetEnabled) {
+        if (scrollTarget === "window") {
+          window.scrollTo(0, scrollY);
+        } else {
+          var $element = document.querySelector(scrollTarget);
+          $element && ($element.scrollTop = scrollY);
+        }
+      }
+    });
 
     _defineProperty(_assertThisInitialized(_this), "_renderModalPortal", function () {
       var scrollTargetEnabled = _this.props.scrollTargetEnabled;
-      var _this$state = _this.state,
-          modalId = _this$state.modalId,
-          isVisible = _this$state.isVisible;
+      var _this$state2 = _this.state,
+          modalId = _this$state2.modalId,
+          isVisible = _this$state2.isVisible;
 
       if (!isVisible) {
         return null;
@@ -1365,16 +1448,17 @@ function (_PureComponent) {
 
       return createPortal(React.createElement("div", {
         id: "__wil_modal_".concat(modalId, "__"),
+        className: "__wil_modal__",
         "data-static": scrollTargetEnabled
       }, _this._renderModal()), document.body);
     });
 
     _defineProperty(_assertThisInitialized(_this), "_renderUnderlay", function () {
-      var _this$props3 = _this.props,
-          underlayColor = _this$props3.underlayColor,
-          underlayEnabled = _this$props3.underlayEnabled,
-          animationType = _this$props3.animationType,
-          animationDuration = _this$props3.animationDuration;
+      var _this$props4 = _this.props,
+          underlayColor = _this$props4.underlayColor,
+          underlayEnabled = _this$props4.underlayEnabled,
+          animationType = _this$props4.animationType,
+          animationDuration = _this$props4.animationDuration;
       var scrollBarContentWidth = _this.state.scrollBarContentWidth;
 
       if (!underlayEnabled) {
@@ -1397,13 +1481,13 @@ function (_PureComponent) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "_renderModal", function () {
-      var _this$props4 = _this.props,
-          children = _this$props4.children,
-          underlayEnabled = _this$props4.underlayEnabled,
-          placement = _this$props4.placement,
-          animationType = _this$props4.animationType,
-          fullScreen = _this$props4.fullScreen,
-          animationDuration = _this$props4.animationDuration;
+      var _this$props5 = _this.props,
+          children = _this$props5.children,
+          underlayEnabled = _this$props5.underlayEnabled,
+          placement = _this$props5.placement,
+          animationType = _this$props5.animationType,
+          fullScreen = _this$props5.fullScreen,
+          animationDuration = _this$props5.animationDuration;
       var isAnimated = _this.state.isAnimated;
       var isCenter = placement === "center";
       var fullScreenClassName = underlayEnabled || isCenter ? styles.fullScreen : "";
@@ -1434,11 +1518,11 @@ function (_PureComponent) {
     value: function () {
       var _componentDidMount = _asyncToGenerator(
       /*#__PURE__*/
-      regenerator.mark(function _callee8() {
+      regenerator.mark(function _callee9() {
         var displayName;
-        return regenerator.wrap(function _callee8$(_context8) {
+        return regenerator.wrap(function _callee9$(_context9) {
           while (1) {
-            switch (_context8.prev = _context8.next) {
+            switch (_context9.prev = _context9.next) {
               case 0:
                 displayName = this.props.displayName;
                 this._open = Event.once("".concat(displayName, "_open"), this._handleEventOpen);
@@ -1448,10 +1532,10 @@ function (_PureComponent) {
 
               case 4:
               case "end":
-                return _context8.stop();
+                return _context9.stop();
             }
           }
-        }, _callee8, this);
+        }, _callee9, this);
       }));
 
       function componentDidMount() {
@@ -1465,11 +1549,11 @@ function (_PureComponent) {
     value: function () {
       var _componentDidUpdate = _asyncToGenerator(
       /*#__PURE__*/
-      regenerator.mark(function _callee9(prevProps) {
+      regenerator.mark(function _callee10(prevProps) {
         var isVisible;
-        return regenerator.wrap(function _callee9$(_context9) {
+        return regenerator.wrap(function _callee10$(_context10) {
           while (1) {
-            switch (_context9.prev = _context9.next) {
+            switch (_context10.prev = _context10.next) {
               case 0:
                 isVisible = this.props.isVisible;
 
@@ -1479,10 +1563,10 @@ function (_PureComponent) {
 
               case 2:
               case "end":
-                return _context9.stop();
+                return _context10.stop();
             }
           }
-        }, _callee9, this);
+        }, _callee10, this);
       }));
 
       function componentDidUpdate(_x6) {
@@ -1496,6 +1580,11 @@ function (_PureComponent) {
     value: function componentWillUnmount() {
       Event.off(this._open);
       Event.off(this._close);
+
+      if (isMobile.ios) {
+        window.removeEventListener("touchmove", this._fixDisableScrollMobile);
+        window.removeEventListener("scroll", this._fixDisableScrollMobile);
+      }
     }
   }, {
     key: "render",
