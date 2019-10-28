@@ -2578,7 +2578,7 @@ function (_PureComponent) {
               case 6:
                 onOpen(payload);
                 _context6.next = 9;
-                return sleep(50);
+                return sleep(animationType === "none" ? 0 : 50);
 
               case 9:
                 _context6.next = 11;
@@ -2665,7 +2665,8 @@ function (_PureComponent) {
     _defineProperty(_assertThisInitialized(_this), "_renderUnderlay", function () {
       var _this$props3 = _this.props,
           underlayColor = _this$props3.underlayColor,
-          underlayEnabled = _this$props3.underlayEnabled;
+          underlayEnabled = _this$props3.underlayEnabled,
+          animationType = _this$props3.animationType;
       var scrollBarContentWidth = _this.state.scrollBarContentWidth;
 
       if (!underlayEnabled) {
@@ -2674,10 +2675,12 @@ function (_PureComponent) {
 
       return React__default.createElement("div", {
         className: styles.underlay,
-        style: {
+        style: _objectSpread2({
           backgroundColor: underlayColor,
           right: !!scrollBarContentWidth ? scrollBarContentWidth : 0
-        },
+        }, animationType === "none" ? {
+          transition: "none"
+        } : {}),
         role: "presentation",
         onClick: _this._handleCloseModal
       });
@@ -2703,10 +2706,12 @@ function (_PureComponent) {
         } : {}
       }, _this._renderUnderlay(), React__default.createElement("div", {
         className: styles.modalContentInner,
-        style: fullScreen ? {
+        style: _objectSpread2({}, fullScreen ? {
           width: "100%",
           height: "100%"
-        } : {}
+        } : {}, {}, animationType === "none" ? {
+          transition: "none"
+        } : {})
       }, children)));
     });
 
