@@ -56,8 +56,8 @@ class App extends React.Component {
 | Prop                  | Type                                | Default | Description |
 | :---------            | :-------:                           | :-----: | :----------- |
 | displayName             | `string`                     | -       | Modal name |
-| placement             | `"center" | "top" | "right" | "bottom" | "left"`                     | `center`       | The position of the modal relative to the screen |
-| animationType           | `"none" | "fade" | "fadeUp" | "fadeDown" | "fadeLeft" | "fadeRight" | "slideUp" | "slideDown" | "slideLeft" | "slideRight" | "zoom"`                            | `none`    | animation for modal |
+| placement             | `"center", "top", "right", "bottom", "left"`                     | `center`       | The position of the modal relative to the screen |
+| animationType           | `"none", "fade", "fadeUp", "fadeDown", "fadeLeft", "fadeRight", "slideUp", "slideDown", "slideLeft", "slideRight", "zoom"`                            | `none`    | animation for modal |
 | underlayEnabled             | `boolean`                     | `true`       | On / off modal underlay |
 | underlayColor             | `string`                     | `rgba(0, 0, 0, 0.5)`       | Set color for modal underlay |
 | fullScreen             | `boolean`                     | `false`       | Content width 100% height 100% |
