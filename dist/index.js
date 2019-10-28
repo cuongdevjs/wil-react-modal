@@ -2450,28 +2450,30 @@ function (_PureComponent) {
     _defineProperty(_assertThisInitialized(_this), "_handleEventOpen",
     /*#__PURE__*/
     function () {
-      var _ref4 = _asyncToGenerator(
+      var _ref5 = _asyncToGenerator(
       /*#__PURE__*/
-      regenerator.mark(function _callee4(_displayName) {
-        var displayName;
+      regenerator.mark(function _callee4(_ref4) {
+        var _displayName, payload, displayName;
+
         return regenerator.wrap(function _callee4$(_context4) {
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
+                _displayName = _ref4.displayName, payload = _ref4.payload;
                 displayName = _this.props.displayName;
 
                 if (!(_displayName === displayName)) {
-                  _context4.next = 5;
+                  _context4.next = 6;
                   break;
                 }
 
-                _context4.next = 4;
+                _context4.next = 5;
                 return _this._setModalVisible(true);
 
-              case 4:
-                _this._handleOpenModal();
-
               case 5:
+                _this._handleOpenModal(payload);
+
+              case 6:
               case "end":
                 return _context4.stop();
             }
@@ -2480,14 +2482,14 @@ function (_PureComponent) {
       }));
 
       return function (_x3) {
-        return _ref4.apply(this, arguments);
+        return _ref5.apply(this, arguments);
       };
     }());
 
     _defineProperty(_assertThisInitialized(_this), "_handleEventClose",
     /*#__PURE__*/
     function () {
-      var _ref5 = _asyncToGenerator(
+      var _ref6 = _asyncToGenerator(
       /*#__PURE__*/
       regenerator.mark(function _callee5(_displayName) {
         var displayName;
@@ -2510,14 +2512,12 @@ function (_PureComponent) {
       }));
 
       return function (_x4) {
-        return _ref5.apply(this, arguments);
+        return _ref6.apply(this, arguments);
       };
     }());
 
     _defineProperty(_assertThisInitialized(_this), "_setScrollBarOverflow", function (overflow, paddingRight) {
-      var _this$props = _this.props,
-          scrollTarget = _this$props.scrollTarget,
-          displayName = _this$props.displayName;
+      var scrollTarget = _this.props.scrollTarget;
       var $scrollTarget = scrollTarget === "window" ? document.body : document.querySelector(scrollTarget);
 
       if ($scrollTarget) {
@@ -2553,66 +2553,73 @@ function (_PureComponent) {
 
     _defineProperty(_assertThisInitialized(_this), "_handleOpenModal",
     /*#__PURE__*/
-    _asyncToGenerator(
-    /*#__PURE__*/
-    regenerator.mark(function _callee6() {
-      var _this$props2, scrollTargetEnabled, onOpenEnd, animationType, displayName, scrollTarget;
+    function () {
+      var _ref7 = _asyncToGenerator(
+      /*#__PURE__*/
+      regenerator.mark(function _callee6(payload) {
+        var _this$props, scrollTargetEnabled, onOpen, onOpenEnd, animationType, scrollTarget;
 
-      return regenerator.wrap(function _callee6$(_context6) {
-        while (1) {
-          switch (_context6.prev = _context6.next) {
-            case 0:
-              _this$props2 = _this.props, scrollTargetEnabled = _this$props2.scrollTargetEnabled, onOpenEnd = _this$props2.onOpenEnd, animationType = _this$props2.animationType, displayName = _this$props2.displayName, scrollTarget = _this$props2.scrollTarget;
-              _context6.next = 3;
-              return _this._setModalId();
+        return regenerator.wrap(function _callee6$(_context6) {
+          while (1) {
+            switch (_context6.prev = _context6.next) {
+              case 0:
+                _this$props = _this.props, scrollTargetEnabled = _this$props.scrollTargetEnabled, onOpen = _this$props.onOpen, onOpenEnd = _this$props.onOpenEnd, animationType = _this$props.animationType, scrollTarget = _this$props.scrollTarget;
+                _context6.next = 3;
+                return _this._setModalId();
 
-            case 3:
-              if (_this._getLengthModals() === 1 && !scrollTargetEnabled) {
-                _this._setScrollBarOverflow("hidden", _this._getScrollBarWidth(scrollTarget));
-              }
+              case 3:
+                if (_this._getLengthModals() === 1 && !scrollTargetEnabled) {
+                  _this._setScrollBarOverflow("hidden", _this._getScrollBarWidth(scrollTarget));
+                }
 
-              _context6.next = 6;
-              return _this._setModalVisible(true);
+                _context6.next = 6;
+                return _this._setModalVisible(true);
 
-            case 6:
-              _context6.next = 8;
-              return sleep(50);
+              case 6:
+                onOpen(payload);
+                _context6.next = 9;
+                return sleep(50);
 
-            case 8:
-              _context6.next = 10;
-              return _this._setModalAnimated(true);
+              case 9:
+                _context6.next = 11;
+                return _this._setModalAnimated(true);
 
-            case 10:
-              _this.setState({
-                scrollBarContentWidth: _this._getScrollBarWidth(_this._modalContent)
-              });
+              case 11:
+                _this.setState({
+                  scrollBarContentWidth: _this._getScrollBarWidth(_this._modalContent)
+                });
 
-              _context6.next = 13;
-              return sleep(animationType === "none" ? 0 : 300);
+                _context6.next = 14;
+                return sleep(animationType === "none" ? 0 : 300);
 
-            case 13:
-              onOpenEnd();
+              case 14:
+                onOpenEnd(payload);
 
-            case 14:
-            case "end":
-              return _context6.stop();
+              case 15:
+              case "end":
+                return _context6.stop();
+            }
           }
-        }
-      }, _callee6);
-    })));
+        }, _callee6);
+      }));
+
+      return function (_x5) {
+        return _ref7.apply(this, arguments);
+      };
+    }());
 
     _defineProperty(_assertThisInitialized(_this), "_handleCloseModal",
     /*#__PURE__*/
     _asyncToGenerator(
     /*#__PURE__*/
     regenerator.mark(function _callee7() {
-      var _this$props3, scrollTargetEnabled, animationType, onCloseEnd;
+      var _this$props2, scrollTargetEnabled, animationType, onCloseEnd;
 
       return regenerator.wrap(function _callee7$(_context7) {
         while (1) {
           switch (_context7.prev = _context7.next) {
             case 0:
-              _this$props3 = _this.props, scrollTargetEnabled = _this$props3.scrollTargetEnabled, animationType = _this$props3.animationType, onCloseEnd = _this$props3.onCloseEnd;
+              _this$props2 = _this.props, scrollTargetEnabled = _this$props2.scrollTargetEnabled, animationType = _this$props2.animationType, onCloseEnd = _this$props2.onCloseEnd;
               _context7.next = 3;
               return _this._setModalAnimated(false);
 
@@ -2644,7 +2651,6 @@ function (_PureComponent) {
       var _this$state = _this.state,
           modalId = _this$state.modalId,
           isVisible = _this$state.isVisible;
-      var body = document.body;
 
       if (!isVisible) {
         return null;
@@ -2653,14 +2659,13 @@ function (_PureComponent) {
       return reactDom.createPortal(React__default.createElement("div", {
         id: "__wil_modal_".concat(modalId, "__"),
         "data-static": scrollTargetEnabled
-      }, _this._renderModal()), body);
+      }, _this._renderModal()), document.body);
     });
 
     _defineProperty(_assertThisInitialized(_this), "_renderUnderlay", function () {
-      var _this$props4 = _this.props,
-          underlayColor = _this$props4.underlayColor,
-          underlayEnabled = _this$props4.underlayEnabled,
-          scrollTarget = _this$props4.scrollTarget;
+      var _this$props3 = _this.props,
+          underlayColor = _this$props3.underlayColor,
+          underlayEnabled = _this$props3.underlayEnabled;
       var scrollBarContentWidth = _this.state.scrollBarContentWidth;
 
       if (!underlayEnabled) {
@@ -2679,12 +2684,12 @@ function (_PureComponent) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "_renderModal", function () {
-      var _this$props5 = _this.props,
-          children = _this$props5.children,
-          underlayEnabled = _this$props5.underlayEnabled,
-          placement = _this$props5.placement,
-          animationType = _this$props5.animationType,
-          fullScreen = _this$props5.fullScreen;
+      var _this$props4 = _this.props,
+          children = _this$props4.children,
+          underlayEnabled = _this$props4.underlayEnabled,
+          placement = _this$props4.placement,
+          animationType = _this$props4.animationType,
+          fullScreen = _this$props4.fullScreen;
       var isAnimated = _this.state.isAnimated;
       var isCenter = placement === "center";
       var fullScreenClassName = underlayEnabled || isCenter ? styles.fullScreen : "";
@@ -2774,7 +2779,7 @@ function (_PureComponent) {
         }, _callee9, this);
       }));
 
-      function componentDidUpdate(_x5) {
+      function componentDidUpdate(_x6) {
         return _componentDidUpdate.apply(this, arguments);
       }
 
@@ -2797,7 +2802,8 @@ function (_PureComponent) {
 }(React.PureComponent);
 
 _defineProperty(Modal, "defaultProps", {
-  onOpenEnd: function onOpenEnd() {},
+  onOpen: function onOpen(payload) {},
+  onOpenEnd: function onOpenEnd(payload) {},
   onCloseEnd: function onCloseEnd() {},
   fullScreen: false,
   displayName: "",
@@ -2810,8 +2816,11 @@ _defineProperty(Modal, "defaultProps", {
   scrollTargetEnabled: false
 });
 
-_defineProperty(Modal, "open", function (displayName) {
-  Event.emit("".concat(displayName, "_open"), displayName);
+_defineProperty(Modal, "open", function (displayName, payload) {
+  Event.emit("".concat(displayName, "_open"), {
+    displayName: displayName,
+    payload: payload
+  });
 });
 
 _defineProperty(Modal, "close", function (displayName) {

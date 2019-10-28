@@ -1,8 +1,9 @@
 declare module "wil-react-modal" {
   export interface Props {
     children: React.ReactNode;
-    onOpenEnd: () => void;
-    onCloseEnd: () => void;
+    onOpen(payload: any): void;
+    onOpenEnd(payload: any): void;
+    onCloseEnd(): void;
     fullScreen: boolean;
     placement: "center" | "top" | "right" | "bottom" | "left";
     scrollTarget: string;

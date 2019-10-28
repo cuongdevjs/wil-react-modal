@@ -52,13 +52,14 @@ class App extends React.Component {
 | fullScreen             | `boolean`                     | `false`       | Content width 100% height 100% |
 | scrollTarget             | `string`                     | `window`       | Toggle the scroll bar of the element. Example scrollTarget value: window, #root, ...  |
 | scrollTargetEnabled             | `boolean`                     | `false`       | Allow toggle scroll bar  |
-| onOpenEnd             | `() => void`                     | -       | Callback executed when modal open  |
+| onOpen             | `(payload: any) => void`                     | -       | Callback executed when modal open. Payload received from method open  |
+| onOpenEnd             | `(payload: any) => void`                     | -       | Callback executed when modal open stop. Payload received from method open  |
 | onCloseEnd             | `() => void`                     | -       | Callback executed when modal close  |
 | isVisible             | `boolean`                     | -       | Set on / off modal. This attribute is needed when you want to open modal at the beginning without taking action  |
 
 **Methods**
 
-| Method                |  Description |
-| :---------            | :----------- |
-| open                  | Open modal with prop displayName Modal.open("displayName") |
-| close                  | Close modal with prop displayName Modal.close("displayName") |
+| Method          | Params   |  Description |
+| :---------      | :-------:     | :----------- |
+| open            | `displayName, payload`     | Open modal with prop displayName Modal.open("displayName", { author: "Wiloke" }) |
+| close           | `displayName`      | Close modal with prop displayName Modal.close("displayName") |

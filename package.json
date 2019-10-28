@@ -22,7 +22,8 @@
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "release-it": "^12.4.3"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
