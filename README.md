@@ -27,9 +27,20 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={() => Modal.open("basic")}>Modal Basic</button>
+        <button
+          onClick={() =>
+            Modal.open("basic", { name: "Wil React Modal", author: "Wiloke" })
+          }
+        >Modal Basic</button>
 
-        <Modal displayName="basic" animationType="zoom">
+        <Modal
+          displayName="basic"
+          animationType="zoom"
+          onOpen={payload => {
+            // Modal receives the payload from Foo.js
+            console.log(payload);
+          }}
+        >
           <div style={{ backgroundColor: "#fff", padding: 30 }}>
             <h2>Modal Basic</h2>
             <button onClick={() => Modal.close("basic")}>Close</button>
