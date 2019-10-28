@@ -28,16 +28,16 @@ class App extends React.Component {
     return (
       <div>
         <button
-          onClick={() =>
+          onClick={() => {
             Modal.open("basic", { name: "Wil React Modal", author: "Wiloke" })
-          }
+          }}
         >Modal Basic</button>
 
         <Modal
           displayName="basic"
           animationType="zoom"
           onOpen={payload => {
-            // Modal receives the payload from Foo.js
+            // Modal receives the payload
             console.log(payload);
           }}
         >
