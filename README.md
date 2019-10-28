@@ -37,7 +37,7 @@ class App extends React.Component {
           displayName="basic"
           animationType="zoom"
           onOpen={payload => {
-            // Modal receives the payload
+            // payload: { name: "Wil React Modal", author: "Wiloke" }
             console.log(payload);
           }}
         >
