@@ -79,6 +79,24 @@ function _defineProperty(obj, key, value) {
   return obj;
 }
 
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
 function ownKeys(object, enumerableOnly) {
   var keys = Object.keys(object);
 
@@ -1534,14 +1552,15 @@ function (_PureComponent) {
           underlayColor = _this$props4.underlayColor,
           underlayEnabled = _this$props4.underlayEnabled,
           animationType = _this$props4.animationType,
-          animationDuration = _this$props4.animationDuration;
+          animationDuration = _this$props4.animationDuration,
+          autoCloseTimeout = _this$props4.autoCloseTimeout;
       var scrollBarContentWidth = _this.state.scrollBarContentWidth;
 
       if (!underlayEnabled) {
         return null;
       }
 
-      return React__default.createElement("div", {
+      return React__default.createElement("div", _extends({
         className: styles.underlay,
         style: _objectSpread2({
           backgroundColor: underlayColor,
@@ -1551,9 +1570,11 @@ function (_PureComponent) {
         } : {
           transition: "opacity ".concat(animationDuration, "ms ease")
         }),
-        role: "presentation",
+        role: "presentation" // eslint-disable-next-line react/jsx-props-no-spreading
+
+      }, !autoCloseTimeout ? {
         onClick: _this._handleCloseModal
-      });
+      } : {}));
     });
 
     _defineProperty(_assertThisInitialized(_this), "_renderModal", function () {
