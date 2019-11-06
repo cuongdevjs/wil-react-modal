@@ -34,6 +34,7 @@
       1,
       {
         "order": [
+          "static-variables",
           "static-methods",
           "instance-variables",
           "type-annotations",
@@ -73,6 +74,8 @@
         }
       }
     ],
+    "react/state-in-constructor": "off",
+    "react/static-property-placement": "off",
 
     "no-unused-vars": ["error", { "args": "none" }],
     "no-unused-expressions": [

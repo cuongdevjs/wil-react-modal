@@ -6,7 +6,7 @@ function Foo({ buttonText }) {
     <div>
       <button
         onClick={() =>
-          Modal.open("basic", { name: "Wil React Modal", author: "Wiloke" })
+          Modal.open("foo", { name: "Wil React Modal", author: "Wiloke" })
         }
       >
         {buttonText}

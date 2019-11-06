@@ -1,6 +1,8 @@
 declare module "wil-react-modal" {
   export interface Props {
-    children: React.ReactNode;
+    children:
+      | (({ payload: any, countDown: number }) => React.ReactNode)
+      | React.ReactNode;
     onOpen(payload: any): void;
     onOpenEnd(payload: any): void;
     onCloseEnd(): void;
@@ -13,6 +15,8 @@ declare module "wil-react-modal" {
     scrollTargetEnabled: boolean;
     displayName: string;
     animationDuration: number;
+    openTimeout: number;
+    autoCloseTimeout: number;
     animationType:
       | "none"
       | "fade"

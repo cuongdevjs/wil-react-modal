@@ -5,7 +5,7 @@ import postcss from "rollup-plugin-postcss";
 import resolve from "rollup-plugin-node-resolve";
 import url from "rollup-plugin-url";
 import svgr from "@svgr/rollup";
-import flow from "rollup-plugin-flow";
+// import flow from "rollup-plugin-flow";
 
 import pkg from "./package.json";
 
@@ -35,7 +35,7 @@ export default {
       plugins: ["@babel/external-helpers"]
     }),
     resolve(),
-    commonjs(),
-    flow()
+    commonjs()
+    // flow()
   ]
 };

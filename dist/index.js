@@ -1045,11 +1045,12 @@ function styleInject(css, ref) {
   }
 }
 
-var css = ".styles_modalContentWrapper__29wUF {\n  position: fixed;\n  overflow: hidden;\n  z-index: 10000;\n}\n\n.styles_fullScreen__ZQEF8 {\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n}\n\n.styles_modalContent__2s9Lt {\n  width: 100%;\n  height: 100%;\n  overflow-x: hidden;\n  overflow-y: auto;\n  -webkit-overflow-scrolling: touch;\n}\n\n.styles_modalContentInner__19dn4 {\n  position: relative;\n  z-index: 10;\n  will-change: opacity, transform;\n}\n\n.styles_underlay__1rSen {\n  position: fixed;\n  top: -100px;\n  right: -100px;\n  bottom: -100px;\n  left: -100px;\n  z-index: 9;\n  opacity: 0;\n}\n\n.styles_center__2Zkpe .styles_modalContent__2s9Lt {\n  position: relative;\n  display: block;\n  text-align: center;\n}\n\n.styles_center__2Zkpe .styles_modalContent__2s9Lt::before {\n  content: '';\n  display: inline-block;\n  width: 0;\n  height: 100%;\n  vertical-align: middle;\n}\n\n.styles_center__2Zkpe .styles_modalContentInner__19dn4 {\n  display: inline-block;\n  vertical-align: middle;\n  text-align: left;\n}\n\n.styles_left__1QLwJ {\n  top: 0;\n  bottom: 0;\n  left: 0;\n}\n\n.styles_left__1QLwJ .styles_modalContent__2s9Lt {\n  display: flex;\n}\n\n.styles_left__1QLwJ .styles_modalContentInner__19dn4 {\n  height: 100%;\n}\n\n.styles_right__1THUQ {\n  top: 0;\n  bottom: 0;\n  right: 0;\n}\n\n.styles_right__1THUQ .styles_modalContent__2s9Lt {\n  display: flex;\n  justify-content: flex-end;\n  height: 100%;\n}\n\n.styles_right__1THUQ .styles_modalContentInner__19dn4 {\n  height: 100%;\n}\n\n.styles_top__1as09 {\n  top: 0;\n  left: 0;\n  right: 0;\n}\n\n.styles_top__1as09 .styles_modalContent__2s9Lt {\n  width: 100%;\n}\n\n.styles_bottom__1CYW9 {\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\n\n.styles_bottom__1CYW9 .styles_modalContent__2s9Lt {\n  display: flex;\n  align-items: flex-end;\n}\n\n.styles_bottom__1CYW9 .styles_modalContentInner__19dn4 {\n  width: 100%;\n}\n\n.styles_fade__39lAn .styles_modalContentInner__19dn4 {\n  opacity: 0;\n}\n\n.styles_zoom__1MrWD .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: scale(0.6);\n}\n\n.styles_fadeLeft__21nsl .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(-20vw, 0);\n}\n\n.styles_fadeRight__1yExP .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(20vw, 0);\n}\n\n.styles_fadeUp__3HvN2 .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(0, -20vh);\n}\n\n.styles_fadeDown__12VgQ .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(0, 20vh);\n}\n\n.styles_slideLeft__22inw .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(-20%, 0);\n}\n\n.styles_slideRight__1BvTu .styles_modalContentInner__19dn4 {\n  transform: translate(100%, 0);\n}\n\n.styles_slideUp__1qSUR .styles_modalContentInner__19dn4 {\n  transform: translate(0, -100%);\n}\n\n.styles_slideDown__-veIR .styles_modalContentInner__19dn4 {\n  transform: translate(0, 100%);\n}\n\n.styles_animated__eXIXQ.styles_fade__39lAn .styles_modalContentInner__19dn4 {\n  opacity: 1;\n}\n.styles_animated__eXIXQ.styles_zoom__1MrWD .styles_modalContentInner__19dn4 {\n  transform: scale(1);\n  opacity: 1;\n}\n\n.styles_animated__eXIXQ.styles_fadeLeft__21nsl .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_fadeRight__1yExP .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_fadeUp__3HvN2 .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_fadeDown__12VgQ .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideLeft__22inw .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideRight__1BvTu .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideUp__1qSUR .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideDown__-veIR .styles_modalContentInner__19dn4 {\n  opacity: 1;\n  transform: translate(0, 0);\n}\n\n.styles_animated__eXIXQ .styles_underlay__1rSen {\n  opacity: 1;\n}\n";
+var css = ".styles_modalContentWrapper__29wUF {\n  position: fixed;\n  overflow: hidden;\n  z-index: 10000;\n}\n\n.styles_fullScreen__ZQEF8 {\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n}\n\n.styles_modalContent__2s9Lt {\n  width: 100%;\n  height: 100%;\n  overflow-x: hidden;\n  overflow-y: auto;\n  -webkit-overflow-scrolling: touch;\n}\n\n.styles_modalContentInner__19dn4 {\n  position: relative;\n  z-index: 10;\n  will-change: opacity, transform;\n}\n\n.styles_underlay__1rSen {\n  position: fixed;\n  top: -100px;\n  right: -100px;\n  bottom: -100px;\n  left: -100px;\n  z-index: 9;\n  opacity: 0;\n}\n\n.styles_center__2Zkpe .styles_modalContent__2s9Lt {\n  position: relative;\n  display: block;\n  text-align: center;\n}\n\n.styles_center__2Zkpe .styles_modalContent__2s9Lt::before {\n  content: '';\n  display: inline-block;\n  width: 0;\n  height: 100%;\n  vertical-align: middle;\n}\n\n.styles_center__2Zkpe .styles_modalContentInner__19dn4 {\n  display: inline-block;\n  vertical-align: middle;\n  text-align: left;\n}\n\n.styles_left__1QLwJ {\n  top: 0;\n  bottom: 0;\n  left: 0;\n}\n\n.styles_left__1QLwJ .styles_modalContent__2s9Lt {\n  display: flex;\n}\n\n.styles_left__1QLwJ .styles_modalContentInner__19dn4 {\n  height: 100%;\n}\n\n.styles_right__1THUQ {\n  top: 0;\n  bottom: 0;\n  right: 0;\n}\n\n.styles_right__1THUQ .styles_modalContent__2s9Lt {\n  display: flex;\n  justify-content: flex-end;\n  height: 100%;\n}\n\n.styles_right__1THUQ .styles_modalContentInner__19dn4 {\n  height: 100%;\n}\n\n.styles_top__1as09 {\n  top: 0;\n  left: 0;\n  right: 0;\n}\n\n.styles_top__1as09 .styles_modalContent__2s9Lt {\n  width: 100%;\n}\n\n.styles_bottom__1CYW9 {\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\n\n.styles_bottom__1CYW9 .styles_modalContent__2s9Lt {\n  display: flex;\n  align-items: flex-end;\n}\n\n.styles_bottom__1CYW9 .styles_modalContentInner__19dn4 {\n  width: 100%;\n}\n\n.styles_fade__39lAn .styles_modalContentInner__19dn4 {\n  opacity: 0;\n}\n\n.styles_zoom__1MrWD .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: scale(0.6);\n}\n\n.styles_fadeLeft__21nsl .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(-20vw, 0);\n}\n\n.styles_fadeRight__1yExP .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(20vw, 0);\n}\n\n.styles_fadeUp__3HvN2 .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(0, -20vh);\n}\n\n.styles_fadeDown__12VgQ .styles_modalContentInner__19dn4 {\n  opacity: 0;\n  transform: translate(0, 20vh);\n}\n\n.styles_slideLeft__22inw .styles_modalContentInner__19dn4 {\n  transform: translate(calc(-50vw - 50%), 0);\n}\n\n.styles_slideRight__1BvTu .styles_modalContentInner__19dn4 {\n  transform: translate(calc(50vw + 50%), 0);\n}\n\n.styles_slideUp__1qSUR .styles_modalContentInner__19dn4 {\n  transform: translate(0, calc(-50vh - 50%));\n}\n\n.styles_slideDown__-veIR .styles_modalContentInner__19dn4 {\n  transform: translate(0, calc(50vh + 50%));\n}\n\n.styles_left__1QLwJ.styles_slideLeft__22inw .styles_modalContentInner__19dn4 {\n  transform: translate(-100%, 0);\n}\n\n.styles_right__1THUQ.styles_slideLeft__22inw .styles_modalContentInner__19dn4 {\n  transform: translate(-100vw, 0);\n}\n\n.styles_right__1THUQ.styles_slideRight__1BvTu .styles_modalContentInner__19dn4 {\n  transform: translate(100%, 0);\n}\n\n.styles_left__1QLwJ.styles_slideRight__1BvTu .styles_modalContentInner__19dn4 {\n  transform: translate(100vw, 0);\n}\n\n.styles_bottom__1CYW9.styles_slideUp__1qSUR .styles_modalContentInner__19dn4 {\n  transform: translate(0, -100vh);\n}\n\n.styles_top__1as09.styles_slideUp__1qSUR .styles_modalContentInner__19dn4 {\n  transform: translate(0, -100%);\n}\n\n.styles_top__1as09.styles_slideDown__-veIR .styles_modalContentInner__19dn4 {\n  transform: translate(0, 100vh);\n}\n\n.styles_bottom__1CYW9.styles_slideDown__-veIR .styles_modalContentInner__19dn4 {\n  transform: translate(0, 100%);\n}\n\n.styles_animated__eXIXQ.styles_fade__39lAn .styles_modalContentInner__19dn4 {\n  opacity: 1;\n}\n.styles_animated__eXIXQ.styles_zoom__1MrWD .styles_modalContentInner__19dn4 {\n  transform: scale(1);\n  opacity: 1;\n}\n\n.styles_animated__eXIXQ.styles_fadeLeft__21nsl .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_fadeRight__1yExP .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_fadeUp__3HvN2 .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_fadeDown__12VgQ .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideLeft__22inw .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideRight__1BvTu .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideUp__1qSUR .styles_modalContentInner__19dn4,\n.styles_animated__eXIXQ.styles_slideDown__-veIR .styles_modalContentInner__19dn4 {\n  opacity: 1;\n  transform: translate(0, 0);\n}\n\n.styles_animated__eXIXQ .styles_underlay__1rSen {\n  opacity: 1;\n}\n";
 var styles = {"modalContentWrapper":"styles_modalContentWrapper__29wUF","fullScreen":"styles_fullScreen__ZQEF8","modalContent":"styles_modalContent__2s9Lt","modalContentInner":"styles_modalContentInner__19dn4","underlay":"styles_underlay__1rSen","center":"styles_center__2Zkpe","left":"styles_left__1QLwJ","right":"styles_right__1THUQ","top":"styles_top__1as09","bottom":"styles_bottom__1CYW9","fade":"styles_fade__39lAn","zoom":"styles_zoom__1MrWD","fadeLeft":"styles_fadeLeft__21nsl","fadeRight":"styles_fadeRight__1yExP","fadeUp":"styles_fadeUp__3HvN2","fadeDown":"styles_fadeDown__12VgQ","slideLeft":"styles_slideLeft__22inw","slideRight":"styles_slideRight__1BvTu","slideUp":"styles_slideUp__1qSUR","slideDown":"styles_slideDown__-veIR","animated":"styles_animated__eXIXQ"};
 styleInject(css);
 
 var Event = new Emitter();
+var ONE_SECOND = 1000;
 
 var Modal =
 /*#__PURE__*/
@@ -1074,7 +1075,9 @@ function (_PureComponent) {
       isVisible: false,
       modalId: 0,
       scrollBarContentWidth: 0,
-      scrollY: 0
+      scrollY: 0,
+      payload: null,
+      countDown: 0
     });
 
     _defineProperty(_assertThisInitialized(_this), "_open", void 0);
@@ -1083,8 +1086,18 @@ function (_PureComponent) {
 
     _defineProperty(_assertThisInitialized(_this), "_modalContent", void 0);
 
+    _defineProperty(_assertThisInitialized(_this), "_interval", void 0);
+
     _defineProperty(_assertThisInitialized(_this), "_setModalContentRef", function (c) {
       _this._modalContent = c;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "_setStartAutoCloseTimeout", function () {
+      var autoCloseTimeout = _this.props.autoCloseTimeout;
+
+      _this.setState({
+        countDown: autoCloseTimeout
+      });
     });
 
     _defineProperty(_assertThisInitialized(_this), "_setVisibleModalWithPropVisible", function (type) {
@@ -1193,7 +1206,7 @@ function (_PureComponent) {
                 displayName = _this.props.displayName;
 
                 if (!(_displayName === displayName)) {
-                  _context4.next = 6;
+                  _context4.next = 7;
                   break;
                 }
 
@@ -1201,9 +1214,13 @@ function (_PureComponent) {
                 return _this._setModalVisible(true);
 
               case 5:
+                _this.setState({
+                  payload: payload
+                });
+
                 _this._handleOpenModal(payload);
 
-              case 6:
+              case 7:
               case "end":
                 return _context4.stop();
             }
@@ -1314,65 +1331,58 @@ function (_PureComponent) {
       }, _callee6);
     })));
 
-    _defineProperty(_assertThisInitialized(_this), "_handleOpenModal",
+    _defineProperty(_assertThisInitialized(_this), "_setCountDown",
     /*#__PURE__*/
     function () {
       var _ref8 = _asyncToGenerator(
       /*#__PURE__*/
-      regenerator.mark(function _callee7(payload) {
-        var _this$props, scrollTargetEnabled, onOpen, onOpenEnd, animationType, scrollTarget, animationDuration;
-
-        return regenerator.wrap(function _callee7$(_context7) {
+      regenerator.mark(function _callee8(callback) {
+        return regenerator.wrap(function _callee8$(_context8) {
           while (1) {
-            switch (_context7.prev = _context7.next) {
+            switch (_context8.prev = _context8.next) {
               case 0:
-                _this$props = _this.props, scrollTargetEnabled = _this$props.scrollTargetEnabled, onOpen = _this$props.onOpen, onOpenEnd = _this$props.onOpenEnd, animationType = _this$props.animationType, scrollTarget = _this$props.scrollTarget, animationDuration = _this$props.animationDuration;
-                _context7.next = 3;
-                return _this._setScrollY();
+                return _context8.abrupt("return", new Promise(function (resolve) {
+                  _this._interval = setInterval(
+                  /*#__PURE__*/
+                  _asyncToGenerator(
+                  /*#__PURE__*/
+                  regenerator.mark(function _callee7() {
+                    var countDown;
+                    return regenerator.wrap(function _callee7$(_context7) {
+                      while (1) {
+                        switch (_context7.prev = _context7.next) {
+                          case 0:
+                            _context7.next = 2;
+                            return _this.setState(function (prevState) {
+                              return {
+                                countDown: prevState.countDown - 1
+                              };
+                            });
 
-              case 3:
-                _context7.next = 5;
-                return _this._setModalId();
+                          case 2:
+                            countDown = _this.state.countDown;
 
-              case 5:
-                if (_this._getLengthModals() === 1 && !scrollTargetEnabled) {
-                  _this._setScrollBarOverflow("hidden", _this._getScrollBarWidth(scrollTarget));
-                }
+                            if (countDown === 0) {
+                              resolve();
+                              if (callback) callback();
+                              clearInterval(_this._interval);
+                            }
 
-                _context7.next = 8;
-                return _this._setModalVisible(true);
+                          case 4:
+                          case "end":
+                            return _context7.stop();
+                        }
+                      }
+                    }, _callee7);
+                  })), ONE_SECOND);
+                }));
 
-              case 8:
-                onOpen(payload);
-                _context7.next = 11;
-                return sleep(animationType === "none" ? 0 : 50);
-
-              case 11:
-                _context7.next = 13;
-                return _this._setModalAnimated(true);
-
-              case 13:
-                _this.setState({
-                  scrollBarContentWidth: _this._getScrollBarWidth(_this._modalContent)
-                });
-
-                _context7.next = 16;
-                return sleep(animationType === "none" ? 0 : animationDuration);
-
-              case 16:
-                if (isMobile.ios) {
-                  window.addEventListener("touchmove", _this._fixDisableScrollMobile);
-                  window.addEventListener("scroll", _this._fixDisableScrollMobile);
-                }
-
-                onOpenEnd(payload);
-
-              case 18:
+              case 1:
               case "end":
-                return _context7.stop();
+                return _context8.stop();
             }
           }
-        }, _callee7);
+        }, _callee8);
       }));
 
       return function (_x5) {
@@ -1380,23 +1390,97 @@ function (_PureComponent) {
       };
     }());
 
+    _defineProperty(_assertThisInitialized(_this), "_handleOpenModal",
+    /*#__PURE__*/
+    function () {
+      var _ref10 = _asyncToGenerator(
+      /*#__PURE__*/
+      regenerator.mark(function _callee9(payload) {
+        var _this$props, scrollTargetEnabled, onOpen, onOpenEnd, animationType, scrollTarget, animationDuration, openTimeout, autoCloseTimeout;
+
+        return regenerator.wrap(function _callee9$(_context9) {
+          while (1) {
+            switch (_context9.prev = _context9.next) {
+              case 0:
+                _this$props = _this.props, scrollTargetEnabled = _this$props.scrollTargetEnabled, onOpen = _this$props.onOpen, onOpenEnd = _this$props.onOpenEnd, animationType = _this$props.animationType, scrollTarget = _this$props.scrollTarget, animationDuration = _this$props.animationDuration, openTimeout = _this$props.openTimeout, autoCloseTimeout = _this$props.autoCloseTimeout;
+                _context9.next = 3;
+                return sleep(openTimeout * ONE_SECOND);
+
+              case 3:
+                _context9.next = 5;
+                return _this._setScrollY();
+
+              case 5:
+                _context9.next = 7;
+                return _this._setModalId();
+
+              case 7:
+                if (_this._getLengthModals() === 1 && !scrollTargetEnabled) {
+                  _this._setScrollBarOverflow("hidden", _this._getScrollBarWidth(scrollTarget));
+                }
+
+                _context9.next = 10;
+                return _this._setModalVisible(true);
+
+              case 10:
+                onOpen(payload);
+                _context9.next = 13;
+                return sleep(animationType === "none" ? 0 : 50);
+
+              case 13:
+                _context9.next = 15;
+                return _this._setModalAnimated(true);
+
+              case 15:
+                _this.setState({
+                  scrollBarContentWidth: _this._getScrollBarWidth(_this._modalContent)
+                });
+
+                _context9.next = 18;
+                return sleep(animationType === "none" ? 0 : animationDuration);
+
+              case 18:
+                if (isMobile.ios) {
+                  window.addEventListener("touchmove", _this._fixDisableScrollMobile);
+                  window.addEventListener("scroll", _this._fixDisableScrollMobile);
+                }
+
+                onOpenEnd(payload);
+
+                if (autoCloseTimeout > 0) {
+                  _this._setCountDown(_this._handleCloseModal);
+                }
+
+              case 21:
+              case "end":
+                return _context9.stop();
+            }
+          }
+        }, _callee9);
+      }));
+
+      return function (_x6) {
+        return _ref10.apply(this, arguments);
+      };
+    }());
+
     _defineProperty(_assertThisInitialized(_this), "_handleCloseModal",
     /*#__PURE__*/
     _asyncToGenerator(
     /*#__PURE__*/
-    regenerator.mark(function _callee8() {
+    regenerator.mark(function _callee10() {
       var _this$props2, scrollTargetEnabled, animationType, onCloseEnd, animationDuration;
 
-      return regenerator.wrap(function _callee8$(_context8) {
+      return regenerator.wrap(function _callee10$(_context10) {
         while (1) {
-          switch (_context8.prev = _context8.next) {
+          switch (_context10.prev = _context10.next) {
             case 0:
               _this$props2 = _this.props, scrollTargetEnabled = _this$props2.scrollTargetEnabled, animationType = _this$props2.animationType, onCloseEnd = _this$props2.onCloseEnd, animationDuration = _this$props2.animationDuration;
-              _context8.next = 3;
+              _context10.next = 3;
               return _this._setModalAnimated(false);
 
             case 3:
-              _context8.next = 5;
+              _context10.next = 5;
               return sleep(animationType === "none" ? 0 : animationDuration);
 
             case 5:
@@ -1404,7 +1488,7 @@ function (_PureComponent) {
                 _this._setScrollBarOverflow("", 0);
               }
 
-              _context8.next = 8;
+              _context10.next = 8;
               return _this._setModalVisible(false);
 
             case 8:
@@ -1413,17 +1497,21 @@ function (_PureComponent) {
                 window.removeEventListener("scroll", _this._fixDisableScrollMobile);
               }
 
+              _this._interval && clearInterval(_this._interval);
+
+              _this._setStartAutoCloseTimeout();
+
               onCloseEnd();
 
-            case 10:
+            case 12:
             case "end":
-              return _context8.stop();
+              return _context10.stop();
           }
         }
-      }, _callee8);
+      }, _callee10);
     })));
 
-    _defineProperty(_assertThisInitialized(_this), "_fixDisableScrollMobile", function () {
+    _defineProperty(_assertThisInitialized(_this), "_fixDisableScrollMobile", function (event) {
       var _this$props3 = _this.props,
           scrollTarget = _this$props3.scrollTarget,
           scrollTargetEnabled = _this$props3.scrollTargetEnabled;
@@ -1432,6 +1520,8 @@ function (_PureComponent) {
           isVisible = _this$state.isVisible;
 
       if (isVisible && !scrollTargetEnabled) {
+        event.preventDefault();
+
         if (scrollTarget === "window") {
           window.scrollTo(0, scrollY);
         } else {
@@ -1455,7 +1545,7 @@ function (_PureComponent) {
         id: "__wil_modal_".concat(modalId, "__"),
         className: "__wil_modal__",
         "data-static": scrollTargetEnabled
-      }, _this._renderModal()), document.body);
+      }, _this._renderModal()), document.body ? document.body : window);
     });
 
     _defineProperty(_assertThisInitialized(_this), "_renderUnderlay", function () {
@@ -1493,7 +1583,10 @@ function (_PureComponent) {
           animationType = _this$props5.animationType,
           fullScreen = _this$props5.fullScreen,
           animationDuration = _this$props5.animationDuration;
-      var isAnimated = _this.state.isAnimated;
+      var _this$state3 = _this.state,
+          isAnimated = _this$state3.isAnimated,
+          payload = _this$state3.payload,
+          countDown = _this$state3.countDown;
       var isCenter = placement === "center";
       var fullScreenClassName = underlayEnabled || isCenter ? styles.fullScreen : "";
       var animatedClassName = isAnimated ? styles.animated : "";
@@ -1512,7 +1605,10 @@ function (_PureComponent) {
         } : {
           transition: "all ".concat(animationDuration, "ms ease")
         })
-      }, children)));
+      }, typeof children === "function" ? children({
+        payload: payload,
+        countDown: countDown
+      }) : children)));
     });
 
     return _this;
@@ -1523,24 +1619,26 @@ function (_PureComponent) {
     value: function () {
       var _componentDidMount = _asyncToGenerator(
       /*#__PURE__*/
-      regenerator.mark(function _callee9() {
+      regenerator.mark(function _callee11() {
         var displayName;
-        return regenerator.wrap(function _callee9$(_context9) {
+        return regenerator.wrap(function _callee11$(_context11) {
           while (1) {
-            switch (_context9.prev = _context9.next) {
+            switch (_context11.prev = _context11.next) {
               case 0:
                 displayName = this.props.displayName;
                 this._open = Event.once("".concat(displayName, "_open"), this._handleEventOpen);
                 this._close = Event.once("".concat(displayName, "_close"), this._handleEventClose);
 
+                this._setStartAutoCloseTimeout();
+
                 this._setVisibleModalWithPropVisible("open");
 
-              case 4:
+              case 5:
               case "end":
-                return _context9.stop();
+                return _context11.stop();
             }
           }
-        }, _callee9, this);
+        }, _callee11, this);
       }));
 
       function componentDidMount() {
@@ -1554,11 +1652,11 @@ function (_PureComponent) {
     value: function () {
       var _componentDidUpdate = _asyncToGenerator(
       /*#__PURE__*/
-      regenerator.mark(function _callee10(prevProps) {
+      regenerator.mark(function _callee12(prevProps) {
         var isVisible;
-        return regenerator.wrap(function _callee10$(_context10) {
+        return regenerator.wrap(function _callee12$(_context12) {
           while (1) {
-            switch (_context10.prev = _context10.next) {
+            switch (_context12.prev = _context12.next) {
               case 0:
                 isVisible = this.props.isVisible;
 
@@ -1568,13 +1666,13 @@ function (_PureComponent) {
 
               case 2:
               case "end":
-                return _context10.stop();
+                return _context12.stop();
             }
           }
-        }, _callee10, this);
+        }, _callee12, this);
       }));
 
-      function componentDidUpdate(_x6) {
+      function componentDidUpdate(_x7) {
         return _componentDidUpdate.apply(this, arguments);
       }
 
@@ -1614,7 +1712,9 @@ _defineProperty(Modal, "defaultProps", {
   underlayEnabled: true,
   isVisible: false,
   scrollTargetEnabled: false,
-  animationDuration: 300
+  animationDuration: 300,
+  openTimeout: 0,
+  autoCloseTimeout: 0
 });
 
 _defineProperty(Modal, "open", function (displayName, payload) {

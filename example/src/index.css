@@ -24,3 +24,17 @@ button {
   margin: 2px;
   font-size: 16px;
 }
+
+.nav {
+  border-bottom: 1px solid #eee;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.nav a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  color: #666;
+  padding: 10px 15px;
+}
