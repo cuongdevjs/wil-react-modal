@@ -1512,7 +1512,7 @@ function (_PureComponent) {
           modalId = _this$state2.modalId,
           isVisible = _this$state2.isVisible;
 
-      if (!isVisible) {
+      if (!isVisible || !modalId) {
         return null;
       }
 
