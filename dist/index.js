@@ -1357,6 +1357,7 @@ function (_PureComponent) {
                     resolve();
                     if (callback) callback();
                     clearInterval(_this._interval);
+                    _this._interval = null;
                   }
 
                 case 4:
@@ -1668,6 +1669,9 @@ function (_PureComponent) {
         window.removeEventListener("touchmove", this._fixDisableScrollMobile);
         window.removeEventListener("scroll", this._fixDisableScrollMobile);
       }
+
+      this._interval && clearInterval(this._interval);
+      this._interval = null;
     }
   }, {
     key: "render",
