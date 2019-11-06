@@ -4,12 +4,12 @@ import Foo from "./Foo";
 
 export default class CloseTimeOut extends Component {
   render() {
-    const TIME_OPEN = 1; // Second
+    const TIME_OPEN = 2; // Second
     const TIME_CLOSE = 5; // Second
     return (
       <div>
         <button type="button" onClick={() => Modal.open("modal")}>
-          Open modal after 1s and auto close modal after 5s
+          Open modal after 2s and auto close modal after 5s
         </button>
         <Modal
           displayName="modal"
@@ -19,7 +19,7 @@ export default class CloseTimeOut extends Component {
           openTimeout={TIME_OPEN}
           autoCloseTimeout={TIME_CLOSE}
         >
-          {({ payload, countDown }) => (
+          {({ countDown }) => (
             <div
               style={{
                 backgroundColor: "#fff",
@@ -44,7 +44,7 @@ export default class CloseTimeOut extends Component {
               >
                 Close
               </button>
-              <h3>Center {countDown}</h3>
+              <h3>Close timeout {countDown}</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry standard dummy text

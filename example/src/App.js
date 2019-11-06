@@ -26,7 +26,9 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
-        <h1>Wil React Modal</h1>
+        <h1>
+          <span>Wil React Modal </span>
+        </h1>
         <div>Modal Component For React</div>
         <nav className="nav">
           <NavLink to="/">Basic</NavLink>

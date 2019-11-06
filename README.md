@@ -17,7 +17,14 @@ yarn add wil-react-modal
 
 **Example**
 
-#### [https://codesandbox.io/s/wil-react-modal-u7cos](https://codesandbox.io/s/wil-react-modal-u7cos)
+#### [https://u7cos.codesandbox.io/](Basic){:target="_blank"}
+#### [https://u7cos.codesandbox.io/open-from-foojs](Open Modal from other file and send payload){:target="_blank"}
+#### [https://u7cos.codesandbox.io/animation](Animation){:target="_blank"}
+#### [https://u7cos.codesandbox.io/placement](Placement){:target="_blank"}
+#### [https://u7cos.codesandbox.io/fullscreen](Fullscreen){:target="_blank"}
+#### [https://u7cos.codesandbox.io/nested](Nested){:target="_blank"}
+#### [https://u7cos.codesandbox.io/autovisible](Auto visible){:target="_blank"}
+#### [https://u7cos.codesandbox.io/closetimeout](Open modal after 2s and auto close modal after 5s){:target="_blank"}
 
 ```js
 import React from "react";
@@ -64,6 +71,9 @@ class App extends React.Component {
 | fullScreen             | `boolean`                     | `false`       | Content width 100% height 100% |
 | scrollTarget             | `string`                     | `window`       | Toggle the scroll bar of the element. Example scrollTarget value: window, #root, ...  |
 | scrollTargetEnabled             | `boolean`                     | `false`       | Allow toggle scroll bar  |
+| openTimeout             | `boolean`                     | `false`       | Open modal timeout (second)  |
+| autoCloseTimeout             | `boolean`                     | `false`       | Close modal timeout (second)  |
+| children             | `React.Node | (({ payload: any, countDown: number }) => React.Node)`                     | -       | ReactNode or Function return ReactNode (payload received from method open and countDown from prop autoCloseTimeout)  |
 | onOpen             | `(payload: any) => void`                     | -       | Callback executed when modal open. Payload received from method open  |
 | onOpenEnd             | `(payload: any) => void`                     | -       | Callback executed when modal open stop. Payload received from method open  |
 | onCloseEnd             | `() => void`                     | -       | Callback executed when modal close  |
