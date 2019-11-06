@@ -17,14 +17,14 @@ yarn add wil-react-modal
 
 **Example**
 
-#### [https://u7cos.codesandbox.io/](Basic){:target="_blank"}
-#### [https://u7cos.codesandbox.io/open-from-foojs](Open Modal from other file and send payload){:target="_blank"}
-#### [https://u7cos.codesandbox.io/animation](Animation){:target="_blank"}
-#### [https://u7cos.codesandbox.io/placement](Placement){:target="_blank"}
-#### [https://u7cos.codesandbox.io/fullscreen](Fullscreen){:target="_blank"}
-#### [https://u7cos.codesandbox.io/nested](Nested){:target="_blank"}
-#### [https://u7cos.codesandbox.io/autovisible](Auto visible){:target="_blank"}
-#### [https://u7cos.codesandbox.io/closetimeout](Open modal after 2s and auto close modal after 5s){:target="_blank"}
+#### [Basic](https://u7cos.codesandbox.io/)
+#### [Open Modal from other file and send payload](https://u7cos.codesandbox.io/open-from-foojs)
+#### [Animation](https://u7cos.codesandbox.io/animation)
+#### [Placement](https://u7cos.codesandbox.io/placement)
+#### [Fullscreen](https://u7cos.codesandbox.io/fullscreen)
+#### [Nested](https://u7cos.codesandbox.io/nested)
+#### [Auto visible](https://u7cos.codesandbox.io/autovisible)
+#### [Open modal after 2s and auto close modal after 5s](https://u7cos.codesandbox.io/closetimeout)
 
 ```js
 import React from "react";
