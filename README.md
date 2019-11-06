@@ -24,7 +24,7 @@ yarn add wil-react-modal
 #### [5. Fullscreen](https://u7cos.codesandbox.io/fullscreen)
 #### [6. Nested](https://u7cos.codesandbox.io/nested)
 #### [7. Auto visible](https://u7cos.codesandbox.io/autovisible)
-#### [8. Open modal after 2s and auto close modal after 5s](https://u7cos.codesandbox.io/closetimeout)
+#### [8. Open modal and auto close modal after 5s](https://u7cos.codesandbox.io/closetimeout)
 
 ```js
 import React from "react";
