@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Modal from "wil-react-modal";
-import Foo from "./Foo";
 
 export default class FullScreen extends Component {
   render() {
