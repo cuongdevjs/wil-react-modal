@@ -17,7 +17,7 @@ yarn add wil-react-modal
 
 **Example**
 
-#### [Basic](https://u7cos.codesandbox.io/)
+#### [Basic](https://u7cos.codesandbox.io/){:target="_blank"}
 #### [Open Modal from other file and send payload](https://u7cos.codesandbox.io/open-from-foojs)
 #### [Animation](https://u7cos.codesandbox.io/animation)
 #### [Placement](https://u7cos.codesandbox.io/placement)
