@@ -73,7 +73,7 @@ class App extends React.Component {
 | scrollTargetEnabled             | `boolean`                     | `false`       | Allow toggle scroll bar  |
 | openTimeout             | `boolean`                     | `false`       | Open modal timeout (second)  |
 | autoCloseTimeout             | `boolean`                     | `false`       | Close modal timeout (second)  |
-| children             | `React.Node | (({ payload: any, countDown: number }) => React.Node)`                     | -       | ReactNode or Function return ReactNode (payload received from method open and countDown from prop autoCloseTimeout)  |
+| children             | `React.Node | (({ payload: any, countDown: number }) => React.Node)`  | -       | ReactNode or Function return ReactNode (payload received from method open and countDown from prop autoCloseTimeout)  |
 | onOpen             | `(payload: any) => void`                     | -       | Callback executed when modal open. Payload received from method open  |
 | onOpenEnd             | `(payload: any) => void`                     | -       | Callback executed when modal open stop. Payload received from method open  |
 | onCloseEnd             | `() => void`                     | -       | Callback executed when modal close  |
