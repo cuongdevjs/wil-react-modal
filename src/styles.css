@@ -1,0 +1,212 @@
+.modalContentWrapper {
+  position: fixed;
+  overflow: hidden;
+  z-index: 10000;
+}
+
+.fullScreen {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modalContent {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.modalContentInner {
+  position: relative;
+  z-index: 10;
+  will-change: opacity, transform;
+}
+
+.underlay {
+  position: fixed;
+  top: -100px;
+  right: -100px;
+  bottom: -100px;
+  left: -100px;
+  z-index: 9;
+  opacity: 0;
+}
+
+.center .modalContent {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.center .modalContent::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.center .modalContentInner {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.left .modalContent {
+  display: flex;
+}
+
+.left .modalContentInner {
+  height: 100%;
+}
+
+.right {
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.right .modalContent {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.right .modalContentInner {
+  height: 100%;
+}
+
+.top {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.top .modalContent {
+  width: 100%;
+}
+
+.bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bottom .modalContent {
+  display: flex;
+  align-items: flex-end;
+}
+
+.bottom .modalContentInner {
+  width: 100%;
+}
+
+.fade .modalContentInner {
+  opacity: 0;
+}
+
+.zoom .modalContentInner {
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.fadeLeft .modalContentInner {
+  opacity: 0;
+  transform: translate(-20vw, 0);
+}
+
+.fadeRight .modalContentInner {
+  opacity: 0;
+  transform: translate(20vw, 0);
+}
+
+.fadeUp .modalContentInner {
+  opacity: 0;
+  transform: translate(0, -20vh);
+}
+
+.fadeDown .modalContentInner {
+  opacity: 0;
+  transform: translate(0, 20vh);
+}
+
+.slideLeft .modalContentInner {
+  transform: translate(calc(-50vw - 50%), 0);
+}
+
+.slideRight .modalContentInner {
+  transform: translate(calc(50vw + 50%), 0);
+}
+
+.slideUp .modalContentInner {
+  transform: translate(0, calc(-50vh - 50%));
+}
+
+.slideDown .modalContentInner {
+  transform: translate(0, calc(50vh + 50%));
+}
+
+.left.slideLeft .modalContentInner {
+  transform: translate(-100%, 0);
+}
+
+.right.slideLeft .modalContentInner {
+  transform: translate(-100vw, 0);
+}
+
+.right.slideRight .modalContentInner {
+  transform: translate(100%, 0);
+}
+
+.left.slideRight .modalContentInner {
+  transform: translate(100vw, 0);
+}
+
+.bottom.slideUp .modalContentInner {
+  transform: translate(0, -100vh);
+}
+
+.top.slideUp .modalContentInner {
+  transform: translate(0, -100%);
+}
+
+.top.slideDown .modalContentInner {
+  transform: translate(0, 100vh);
+}
+
+.bottom.slideDown .modalContentInner {
+  transform: translate(0, 100%);
+}
+
+.animated.fade .modalContentInner {
+  opacity: 1;
+}
+.animated.zoom .modalContentInner {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.animated.fadeLeft .modalContentInner,
+.animated.fadeRight .modalContentInner,
+.animated.fadeUp .modalContentInner,
+.animated.fadeDown .modalContentInner,
+.animated.slideLeft .modalContentInner,
+.animated.slideRight .modalContentInner,
+.animated.slideUp .modalContentInner,
+.animated.slideDown .modalContentInner {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.animated .underlay {
+  opacity: 1;
+}

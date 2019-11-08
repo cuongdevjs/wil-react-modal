@@ -20,7 +20,12 @@ export default class RouterModal extends Component {
         </div>
         {dataPosts.map(post => {
           return (
-            <Modal displayName={post.id} fullScreen underlayColor="#fff">
+            <Modal
+              key={post.id}
+              displayName={post.id}
+              fullScreen
+              underlayColor="#fff"
+            >
               <div className="router-modal">
                 <button
                   className="router-modal__close"
