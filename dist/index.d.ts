@@ -41,7 +41,14 @@ declare module "wil-react-modal" {
   export default class Modal<State extends object> {
     state: State;
     props: Props;
-    public static open(displayName: string);
+    public static open(
+      displayName: string,
+      state: {
+        historyPushUrl: string;
+        historyPushTitle: string;
+        payload: any;
+      }
+    );
     public static close(displayName: string);
   }
 }

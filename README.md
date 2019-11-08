@@ -25,6 +25,7 @@ yarn add wil-react-modal
 #### [6. Nested](https://u7cos.codesandbox.io/nested)
 #### [7. Auto visible](https://u7cos.codesandbox.io/autovisible)
 #### [8. Open modal and auto close modal after 5s](https://u7cos.codesandbox.io/closetimeout)
+#### [9. Router Modal](https://u7cos.codesandbox.io/routermodal)
 
 ```js
 import React from "react";
@@ -83,5 +84,5 @@ class App extends React.Component {
 
 | Method          | Params   |  Description |
 | :---------      | :-------:     | :----------- |
-| open            | `displayName, payload`     | Open modal with prop displayName Modal.open("displayName", { author: "Wiloke" }) |
+| open            | `displayName, { historyPushTitle, historyPushUrl, payload }`     | Open modal with prop `displayName`. You can using `historyPushTitle` and `historyPushUrl` for Modal Router and send data with `payload` ( `historyPushUrl` could be `http://localhost:3000/foo.html` or `/foo.html` or `foo.html`. Example: [Router Modal](https://u7cos.codesandbox.io/routermodal) ) |
 | close           | `displayName`      | Close modal with prop displayName Modal.close("displayName") |
