@@ -1625,7 +1625,9 @@ function (_PureComponent) {
           placement = _this$props5.placement,
           animationType = _this$props5.animationType,
           fullScreen = _this$props5.fullScreen,
-          animationDuration = _this$props5.animationDuration;
+          animationDuration = _this$props5.animationDuration,
+          modalContainerClassName = _this$props5.modalContainerClassName,
+          modalContainerStyle = _this$props5.modalContainerStyle;
       var _this$state3 = _this.state,
           isAnimated = _this$state3.isAnimated,
           payload = _this$state3.payload,
@@ -1634,7 +1636,8 @@ function (_PureComponent) {
       var fullScreenClassName = underlayEnabled || isCenter ? styles.fullScreen : "";
       var animatedClassName = isAnimated ? styles.animated : "";
       return React.createElement("div", {
-        className: "".concat(styles.modalContentWrapper, " ").concat(styles[placement], " ").concat(animatedClassName, " ").concat(styles[animationType], " ").concat(fullScreenClassName).trim()
+        className: "".concat(styles.modalContentWrapper, " ").concat(styles[placement], " ").concat(animatedClassName, " ").concat(animationType ? styles[animationType] : "", " ").concat(fullScreenClassName, " ").concat(modalContainerClassName).trim(),
+        style: modalContainerStyle
       }, React.createElement("div", {
         ref: _this._setModalContentRef,
         className: styles.modalContent
@@ -1760,7 +1763,9 @@ _defineProperty(Modal, "defaultProps", {
   scrollTargetEnabled: false,
   animationDuration: 300,
   openTimeout: 0,
-  autoCloseTimeout: 0
+  autoCloseTimeout: 0,
+  modalContainerClassName: "",
+  modalContainerStyle: {}
 });
 
 _defineProperty(Modal, "open", function (displayName, state) {

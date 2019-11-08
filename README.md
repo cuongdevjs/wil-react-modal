@@ -81,6 +81,8 @@ class App extends React.Component {
 | onOpenEnd             | `(payload: any) => void`                     | -       | Callback executed when modal open stop. Payload received from method open  |
 | onCloseEnd             | `() => void`                     | -       | Callback executed when modal close  |
 | isVisible             | `boolean`                     | -       | Set on / off modal. This attribute is needed when you want to open modal at the beginning without taking action  |
+| modalContainerClassName             | `string`   | -       | ClassName for Modal  |
+| modalContainerStyle             | `Object`   | -       | Style for Modal  |
 
 **Methods**
 

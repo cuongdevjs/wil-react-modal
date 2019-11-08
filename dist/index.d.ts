@@ -17,6 +17,8 @@ declare module "wil-react-modal" {
     animationDuration: number;
     openTimeout: number;
     autoCloseTimeout: number;
+    modalContainerClassName: string;
+    modalContainerStyle: object;
     animationType:
       | "none"
       | "fade"
