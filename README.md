@@ -37,7 +37,9 @@ class App extends React.Component {
       <div>
         <button
           onClick={() => {
-            Modal.open("basic", { name: "Wil React Modal", author: "Wiloke" })
+            Modal.open("basic", {
+              payload: { name: "Wil React Modal", author: "Wiloke" }
+            })
           }}
         >Modal Basic</button>
 
